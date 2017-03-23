@@ -23,8 +23,8 @@ export function sendNotification(actionData) {
       data: actionData
     });
     if (actionData.onclickDispatch) n.onclick = () => dispatch({
-      type: actionData.onclickDispatch,
-      data: actionData
+      type: actionData.onclickDispatch.type,
+      payload: (actionData.onclickDispatch.payload) ? actionData.onclickDispatch.payload : null
     });
   };
 }
