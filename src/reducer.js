@@ -2,7 +2,7 @@ const initialState = {
   allowed: false
 };
 
-const renotifierReducers = (state = initialState, action) => {
+const renotifierReducer = (state = initialState, action) => {
   switch (action.type) {
     case "renotifier/GETTING_PERMISSION":
       return Object.assign({}, state, {
@@ -12,4 +12,4 @@ const renotifierReducers = (state = initialState, action) => {
   return state;
 };
 
-export default renotifierReducers;
+export default renotifierReducer;
