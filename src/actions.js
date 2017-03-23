@@ -14,14 +14,17 @@ export function getPermission() {
 
 export function sendNotification(actionData) {
   return (dispatch) => {
-    const n = new Notification({...actionData.data});
+    let data = { title: actionData.title };
+    if (actionData.options) data["options"] = actionData.options;
+
+    const n = new Notification(...data);
     dispatch({
       type: "renotifier/SEND_NITIFICATION",
-      data: actionData.data
+      data: actionData
     });
-    if (actionData.dispatchType) n.onclick = () => dispatch({
-      type: actionData.dispatchType,
-      data: actionData.data
+    if (actionData.onclickDispatch) n.onclick = () => dispatch({
+      type: actionData.onclickDispatch,
+      data: actionData
     });
   };
 }
