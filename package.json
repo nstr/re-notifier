@@ -1,0 +1,35 @@
+{
+  "name": "re-notifier",
+  "version": "0.0.1",
+  "description": "Redux notifier with using standard web HTML5 API for browser notification",
+  "main": "lib/index.js",
+  "scripts": {
+    "compile": "babel src --out-dir lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/njnest/re-notifier.git"
+  },
+  "keywords": [
+    "redux-notifier",
+    "react-notifier",
+    "rc-notifier",
+    "react-redux-notifier",
+    "react-notifications",
+    "redux-notifications",
+    "web-notifications"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-0": "^6.22.0"
+  },
+  "author": "Nick Nesterov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/njnest/re-notifier/issues"
+  },
+  "homepage": "https://github.com/njnest/re-notifier#readme"
+}
