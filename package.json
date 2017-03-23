@@ -1,6 +1,6 @@
 {
   "name": "re-notifier",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Redux notifier with using standard web HTML5 API for browser notification",
   "main": "lib/index.js",
   "scripts": {

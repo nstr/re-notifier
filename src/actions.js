@@ -14,8 +14,8 @@ export function getPermission() {
 
 export function sendNotification(actionData) {
   return (dispatch) => {
-    let data = { title: actionData.title };
-    if (actionData.options) data["options"] = actionData.options;
+    let data = [actionData.title];
+    if (actionData.options) data.push(actionData.options);
 
     const n = new Notification(...data);
     dispatch({
