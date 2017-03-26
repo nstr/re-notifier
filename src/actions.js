@@ -5,7 +5,9 @@ export function getPermission() {
       Notification.requestPermission((status) => {
         dispatch({
           type: "renotifier/GETTING_PERMISSION",
-          allowed: status === "granted"
+          payload: {
+            allowed: status === "granted"
+          }
         });
       });
     }
@@ -22,9 +24,6 @@ export function sendNotification(actionData) {
       type: "renotifier/SEND_NITIFICATION",
       data: actionData
     });
-    if (actionData.onclickDispatch) n.onclick = () => dispatch({
-      type: actionData.onclickDispatch.type,
-      payload: (actionData.onclickDispatch.payload) ? actionData.onclickDispatch.payload : null
-    });
+    if (actionData.onclick) n.onclick = actionData.onclick;
   };
 }
