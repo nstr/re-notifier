@@ -52,10 +52,10 @@ this.props.dispatch(sendNotification({
 }));
 
 ```
-
+Module "re-notifier" serve all web HTML5 API standards.
 
 Property | Type | Description
 :---|:---|:---
 title | `string` (required) | A title of the notication.
-options | `Object` | Notification items such as body, icon, tag and etc.
+options | `Object` | Notification items such as `body`, `icon`, `tag` and etc.
 onclick | `function` | Function which was called after click.
