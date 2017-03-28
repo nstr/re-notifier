@@ -33,7 +33,7 @@ import { getPermission } from "re-notifier";
 class SomeComponent extends React.Component{
   ...
   componentDidMount() {
-   this.props.dispatch(getPermisson());
+   this.props.dispatch(getPermission());
   }
   ...
 }
