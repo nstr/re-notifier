@@ -42,6 +42,7 @@ class SomeComponent extends React.Component{
 After all, you will get the opportunity to send browser notification using re-notifier actions in the way: 
 
 ```jsx
+import { sendNotification } from "re-notifier";
 
 this.props.dispatch(sendNotification({
   title: "This is a title",
