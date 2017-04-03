@@ -25,5 +25,6 @@ export function sendNotification(actionData) {
       data: actionData
     });
     if (actionData.onclick) n.onclick = actionData.onclick;
+    if (actionData.closeOnclick) n.addEventListener("click", () => n.close());
   };
 }
