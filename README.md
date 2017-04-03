@@ -60,3 +60,4 @@ Property | Type | Description
 title | `string` (required) | A title of the notication.
 options | `Object` | Notification items such as `body`, `icon`, `tag` and etc.
 onclick | `function` | Function which was called after click.
+closeOnclick | `bool` | Close the notification after click.
